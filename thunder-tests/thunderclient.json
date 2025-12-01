@@ -1,6 +1,6 @@
 {
   "client": "Thunder Client",
-  "collectionName": "Taxi Antibes API",
+  "collectionName": "Taxi Cannes API",
   "dateExported": "2025-10-12",
   "version": "1.1",
   "folders": [],
@@ -14,7 +14,7 @@
           "value": "application/json"
         }
       ],
-      "colId": "taxi-antibes",
+      "colId": "taxi-cannes",
       "name": "1️⃣ Créer une réservation (POST)",
       "url": "http://localhost:3000/users/reservation",
       "method": "POST",
@@ -22,7 +22,7 @@
       "created": "2025-10-12T20:00:00.000Z",
       "body": {
         "type": "json",
-        "raw": "{\n  \"nom\": \"Dupont Jean\",\n  \"indicatifPays\": \"+33\",\n  \"telephone\": \"612345678\",\n  \"email\": \"jean.dupont@example.com\",\n  \"date\": \"2025-10-15\",\n  \"heure\": \"14:30\",\n  \"adresseDepart\": \"Aéroport Nice Côte d'Azur\",\n  \"adresseArrivee\": \"Antibes, 06600\",\n  \"nombreBagages\": \"2\",\n  \"nombrePassagers\": \"3\",\n  \"commentaires\": \"Vol Air France AF7654 - Siège bébé nécessaire\"\n}",
+        "raw": "{\n  \"nom\": \"Dupont Jean\",\n  \"indicatifPays\": \"+33\",\n  \"telephone\": \"612345678\",\n  \"email\": \"jean.dupont@example.com\",\n  \"date\": \"2025-10-15\",\n  \"heure\": \"14:30\",\n  \"adresseDepart\": \"Aéroport Nice Côte d'Azur\",\n  \"adresseArrivee\": \"Cannes, 06400\",\n  \"nombreBagages\": \"2\",\n  \"nombrePassagers\": \"3\",\n  \"commentaires\": \"Vol Air France AF7654 - Siège bébé nécessaire\"\n}",
         "form": []
       },
       "tests": []
@@ -36,7 +36,7 @@
           "value": "application/json"
         }
       ],
-      "colId": "taxi-antibes",
+      "colId": "taxi-cannes",
       "name": "2️⃣ Créer une réservation minimale (POST)",
       "url": "http://localhost:3000/users/reservation",
       "method": "POST",
@@ -44,7 +44,7 @@
       "created": "2025-10-12T20:00:00.000Z",
       "body": {
         "type": "json",
-        "raw": "{\n  \"nom\": \"Martin Sophie\",\n  \"telephone\": \"698765432\",\n  \"date\": \"2025-10-16\",\n  \"heure\": \"09:00\",\n  \"adresseDepart\": \"Gare SNCF Antibes\",\n  \"adresseArrivee\": \"Monaco, Place du Casino\",\n  \"nombreBagages\": \"1\",\n  \"nombrePassagers\": \"2\"\n}",
+        "raw": "{\n  \"nom\": \"Martin Sophie\",\n  \"telephone\": \"698765432\",\n  \"date\": \"2025-10-16\",\n  \"heure\": \"09:00\",\n  \"adresseDepart\": \"Gare SNCF Cannes\",\n  \"adresseArrivee\": \"Monaco, Place du Casino\",\n  \"nombreBagages\": \"1\",\n  \"nombrePassagers\": \"2\"\n}",
         "form": []
       },
       "tests": []
@@ -58,7 +58,7 @@
           "value": "application/json"
         }
       ],
-      "colId": "taxi-antibes",
+      "colId": "taxi-cannes",
       "name": "3️⃣ Créer réservation UK (POST)",
       "url": "http://localhost:3000/users/reservation",
       "method": "POST",
@@ -80,7 +80,7 @@
           "value": "application/json"
         }
       ],
-      "colId": "taxi-antibes",
+      "colId": "taxi-cannes",
       "name": "4️⃣ Lister toutes les réservations (GET)",
       "url": "http://localhost:3000/users/reservations",
       "method": "GET",
@@ -102,7 +102,7 @@
           "value": "application/json"
         }
       ],
-      "colId": "taxi-antibes",
+      "colId": "taxi-cannes",
       "name": "5️⃣ Récupérer une réservation par ID (GET)",
       "url": "http://localhost:3000/users/reservation/ID_A_REMPLACER",
       "method": "GET",
@@ -124,7 +124,7 @@
           "value": "application/json"
         }
       ],
-      "colId": "taxi-antibes",
+      "colId": "taxi-cannes",
       "name": "6️⃣ Supprimer une réservation (DELETE)",
       "url": "http://localhost:3000/users/reservation/ID_A_REMPLACER",
       "method": "DELETE",
@@ -146,7 +146,7 @@
           "value": "application/json"
         }
       ],
-      "colId": "taxi-antibes",
+      "colId": "taxi-cannes",
       "name": "7️⃣ Tester la route /date (GET)",
       "url": "http://localhost:3000/date",
       "method": "GET",

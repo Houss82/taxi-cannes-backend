@@ -15,8 +15,9 @@ app.use(
   cors({
     origin: [
       "http://localhost:3000",
-      "https://www.taxi-antibes.fr",
-      "https://taxi-antibes.fr",
+      "http://localhost:3002",
+      "https://www.cannestaxi.fr",
+      "https://cannestaxi.fr",
     ],
     credentials: true,
   })

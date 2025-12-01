@@ -1,5 +1,5 @@
 {
-  "description": "Tests ThunderClient pour l'API Taxi Antibes",
+  "description": "Tests ThunderClient pour l'API Taxi Cannes",
   "baseUrl": "http://localhost:3000",
 
   "tests": [
@@ -18,7 +18,7 @@
         "date": "2025-10-15",
         "heure": "14:30",
         "adresseDepart": "Aéroport Nice Côte d'Azur",
-        "adresseArrivee": "Antibes, 06600",
+        "adresseArrivee": "Cannes, 06400",
         "nombreBagages": "2",
         "nombrePassagers": "3",
         "commentaires": "Vol Air France AF7654 - Siège bébé nécessaire"
@@ -37,7 +37,7 @@
         "telephone": "698765432",
         "date": "2025-10-16",
         "heure": "09:00",
-        "adresseDepart": "Gare SNCF Antibes",
+        "adresseDepart": "Gare SNCF Cannes",
         "adresseArrivee": "Monaco, Place du Casino",
         "nombreBagages": "1",
         "nombrePassagers": "2",
@@ -101,7 +101,7 @@
       "email": "marie.dubois@gmail.com",
       "date": "2025-11-01",
       "heure": "10:15",
-      "adresseDepart": "Vieux Port Antibes",
+      "adresseDepart": "Vieux Port Cannes",
       "adresseArrivee": "Cannes La Bocca Gare",
       "nombreBagages": "1",
       "nombrePassagers": "1",

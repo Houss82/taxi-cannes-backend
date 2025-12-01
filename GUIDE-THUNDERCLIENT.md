@@ -1,4 +1,4 @@
-# 🚕 Guide d'utilisation ThunderClient - Taxi Antibes
+# 🚕 Guide d'utilisation ThunderClient - Taxi Cannes
 
 ## 📥 Comment importer la collection de tests
 
@@ -35,7 +35,7 @@ Si l'import ne fonctionne pas, créez les requêtes manuellement en suivant les 
   "date": "2025-10-15",
   "heure": "14:30",
   "adresseDepart": "Aéroport Nice Côte d'Azur",
-  "adresseArrivee": "Antibes, 06600",
+  "adresseArrivee": "Cannes, 06400",
   "nombreBagages": "2",
   "nombrePassagers": "3",
   "commentaires": "Vol Air France AF7654 - Siège bébé nécessaire"
@@ -58,7 +58,7 @@ Si l'import ne fonctionne pas, créez les requêtes manuellement en suivant les 
   "telephone": "698765432",
   "date": "2025-10-16",
   "heure": "09:00",
-  "adresseDepart": "Gare SNCF Antibes",
+  "adresseDepart": "Gare SNCF Cannes",
   "adresseArrivee": "Monaco, Place du Casino",
   "nombreBagages": "1",
   "nombrePassagers": "2"

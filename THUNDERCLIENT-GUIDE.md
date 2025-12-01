@@ -1,4 +1,4 @@
-# 🚕 Guide ThunderClient - Taxi Antibes API
+# 🚕 Guide ThunderClient - Taxi Cannes API
 
 ## 📋 Routes disponibles
 
@@ -19,7 +19,7 @@
   "date": "2025-10-15",
   "heure": "14:30",
   "adresseDepart": "Aéroport Nice Côte d'Azur",
-  "adresseArrivee": "Antibes, 06600",
+  "adresseArrivee": "Cannes, 06400",
   "nombreBagages": "2",
   "nombrePassagers": "3",
   "commentaires": "Vol Air France AF7654"
@@ -125,7 +125,7 @@
   "email": "sophie.martin@gmail.com",
   "date": "2025-10-16",
   "heure": "09:00",
-  "adresseDepart": "Gare SNCF Antibes",
+  "adresseDepart": "Gare SNCF Cannes",
   "adresseArrivee": "Monaco, Place du Casino",
   "nombreBagages": "1",
   "nombrePassagers": "2",
