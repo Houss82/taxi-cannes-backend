@@ -1,97 +1,35 @@
 var express = require("express");
 var router = express.Router();
-const User = require("../models/users");
 
-// POST - Créer une nouvelle réservation
+const CESSATION = {
+  result: false,
+  error:
+    "Le site cannestaxi.fr a définitivement cessé son activité. Aucune réservation n’est acceptée.",
+};
+
+/**
+ * Cessation d'activité — toutes les routes de réservation renvoient 410.
+ * Les données historiques en base MongoDB ne sont pas supprimées.
+ */
+
+// POST - Créer une nouvelle réservation (désactivé)
 router.post("/reservation", async (req, res) => {
-  try {
-    const newUser = new User({
-      nom: req.body.nom,
-      indicatifPays: req.body.indicatifPays || "+33",
-      telephone: req.body.telephone,
-      email: req.body.email,
-      date: req.body.date,
-      heure: req.body.heure,
-      adresseDepart: req.body.adresseDepart,
-      adresseArrivee: req.body.adresseArrivee,
-      nombreBagages: req.body.nombreBagages,
-      nombrePassagers: req.body.nombrePassagers,
-      commentaires: req.body.commentaires,
-    });
-
-    const savedUser = await newUser.save();
-    res.status(201).json({
-      result: true,
-      message: "Réservation créée avec succès",
-      reservation: savedUser,
-    });
-  } catch (error) {
-    res.status(400).json({
-      result: false,
-      error: error.message,
-    });
-  }
+  return res.status(410).json(CESSATION);
 });
 
-// GET - Récupérer toutes les réservations
+// GET - Récupérer toutes les réservations (désactivé publiquement)
 router.get("/reservations", async (req, res) => {
-  try {
-    const users = await User.find();
-    res.json({
-      result: true,
-      count: users.length,
-      reservations: users,
-    });
-  } catch (error) {
-    res.status(500).json({
-      result: false,
-      error: error.message,
-    });
-  }
+  return res.status(410).json(CESSATION);
 });
 
-// GET - Récupérer une réservation par ID
+// GET - Récupérer une réservation par ID (désactivé publiquement)
 router.get("/reservation/:id", async (req, res) => {
-  try {
-    const user = await User.findById(req.params.id);
-    if (!user) {
-      return res.status(404).json({
-        result: false,
-        message: "Réservation non trouvée",
-      });
-    }
-    res.json({
-      result: true,
-      reservation: user,
-    });
-  } catch (error) {
-    res.status(500).json({
-      result: false,
-      error: error.message,
-    });
-  }
+  return res.status(410).json(CESSATION);
 });
 
-// DELETE - Supprimer une réservation
+// DELETE - Supprimer une réservation (désactivé)
 router.delete("/reservation/:id", async (req, res) => {
-  try {
-    const deletedUser = await User.findByIdAndDelete(req.params.id);
-    if (!deletedUser) {
-      return res.status(404).json({
-        result: false,
-        message: "Réservation non trouvée",
-      });
-    }
-    res.json({
-      result: true,
-      message: "Réservation supprimée avec succès",
-    });
-  } catch (error) {
-    res.status(500).json({
-      result: false,
-      error: error.message,
-    });
-  }
+  return res.status(410).json(CESSATION);
 });
 
 module.exports = router;
