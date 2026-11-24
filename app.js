@@ -31,6 +31,11 @@ app.use(express.static(path.join(__dirname, "public")));
 app.use("/", indexRouter);
 app.use("/users", usersRouter);
 
-// Connexion à la base de données avec gestion d'erreur
-connectDB();
+/**
+ * Cessation d'activité : pas de connexion MongoDB au runtime public.
+ * Les routes réservation renvoient 410 sans toucher à la base.
+ * Les données historiques restent intactes dans MongoDB.
+ * (connectDB conservé dans models/ pour restauration éventuelle)
+ */
+// connectDB();
 module.exports = app;
